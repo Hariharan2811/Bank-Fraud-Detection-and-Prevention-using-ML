@@ -8,6 +8,7 @@ Each transaction is analyzed in real time, and a Risk Score is generated to clas
 The system is built using:
 
 ⦁	MERN Stack for frontend and backend services
+
 ⦁	FastAPI for serving the Machine Learning model
 
 🎯 Objectives
