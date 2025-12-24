@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar container */
+nav {
+  width: 100%;
+  background-color: #0a1f44; /* Bank-style dark blue */
+  padding: 12px 40px;
+}
+
+/* Main navbar list */
+#Navbar_items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo + title container */
+#List_items_title {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Logo image */
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+/* Bank title */
+#List_items_title h2 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Right-side menu */
+#list_items_content {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Links */
+#list_items_content a,
+#List_items_title a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+#list_items_content a:hover {
+  color: #f5c542; /* Gold accent */
+}
+
+/* Login button */
+#list_items_content button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f5c542;
+  color: #0a1f44;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover */
+#list_items_content button:hover {
+  background-color: #e0b233;
+  transform: scale(1.05);
+}
+
+/* Remove anchor underline around button */
+#list_items_content li a button {
+  text-decoration: none;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  #Navbar_items {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #list_items_content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
